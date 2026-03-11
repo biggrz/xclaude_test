@@ -1,0 +1,58 @@
+{
+  "$schema": "./STATE.schema.json",
+  "version": "1",
+  "updated_at": "2026-03-11T00:01:00Z",
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Implement core todo.js CLI app",
+      "description": "Single-file Node.js CLI with add, list, done, remove commands. Persists to todos.json. No external dependencies.",
+      "status": "done",
+      "owner": "neo",
+      "depends_on": [],
+      "branch": "neo/T-001/implement-todo-cli",
+      "pr_url": "https://github.com/biggrz/xclaude_test/pull/1",
+      "blocker": null,
+      "retry_count": 0,
+      "max_retries": 3,
+      "created_at": "2026-03-11T00:00:00Z",
+      "claimed_at": "2026-03-11T00:00:00Z",
+      "completed_at": "2026-03-11T00:01:00Z",
+      "notes": "Delivered in PR #1 together with T-002 and T-003. 24/24 tests pass."
+    },
+    {
+      "id": "T-002",
+      "title": "Write todo.test.js tests",
+      "description": "Test file using only Node.js built-ins. All success criteria commands must have test coverage. Run with: node todo.test.js",
+      "status": "done",
+      "owner": "neo",
+      "depends_on": ["T-001"],
+      "branch": "neo/T-001/implement-todo-cli",
+      "pr_url": "https://github.com/biggrz/xclaude_test/pull/1",
+      "blocker": null,
+      "retry_count": 0,
+      "max_retries": 3,
+      "created_at": "2026-03-11T00:00:00Z",
+      "claimed_at": "2026-03-11T00:00:00Z",
+      "completed_at": "2026-03-11T00:01:00Z",
+      "notes": "Delivered in PR #1 together with T-001 and T-003. 24 tests, 0 failures."
+    },
+    {
+      "id": "T-003",
+      "title": "Write README.md",
+      "description": "Document all CLI commands with usage examples. Explain todos.json persistence and how to run tests.",
+      "status": "done",
+      "owner": "neo",
+      "depends_on": ["T-001"],
+      "branch": "neo/T-001/implement-todo-cli",
+      "pr_url": "https://github.com/biggrz/xclaude_test/pull/1",
+      "blocker": null,
+      "retry_count": 0,
+      "max_retries": 3,
+      "created_at": "2026-03-11T00:00:00Z",
+      "claimed_at": "2026-03-11T00:00:00Z",
+      "completed_at": "2026-03-11T00:01:00Z",
+      "notes": "Delivered in PR #1 together with T-001 and T-002."
+    }
+  ]
+}
